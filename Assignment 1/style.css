@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    width: 800px;
+    margin: auto;
+    
+}
+body{
+    background-color: rgb(72, 70, 70);
+}
+
+.box{
+    background-color: white;
+    padding-block: 50px;
+    
+   
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    
+}
+
+.box2{
+    background-color: rgb(18, 69, 69);
+    width: 25vw;
+    height: 150vh;
+}
+
+.pic{
+    border: 4px solid #27384c;
+    width: 210px;
+    height: 210px;
+    border-radius: 200px;
+    margin-left: -54px;
+}
+.pic img {
+    border-radius: 210px;
+    
+}
+.content{
+    /* padding: -16px; */
+    margin-left: 5px;
+    margin-top: 6px;
+}
+.font1{
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: #27384c;
+    font-size: 65px;
+   
+
+}
+.font2{
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+     color: #27384c;
+     font-size: 65px;
+     margin-top: -29px;
+    
+
+}
+
+.phone{
+    display: flex;
+    gap: 15px;
+    padding-left: 75px;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.computer{
+    font-family: "Poppins", sans-serif;
+    color: #27384c;
+    font-size: 20px;
+    margin-top: -13px;
+}
+
+.address{
+    margin-left: -24px;
+}
+
+.img-phone{
+    background-color: #27384c;
+    width:  30px;
+    height: 30px;
+    border-radius: 30px;
+   
+    
+}
+
+
+svg{
+    height: 20px;
+    width: 20px;
+   padding: 5px;
+}
+
+.word{
+    color: #27384c;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif ;
+}
+
+.img-mail{
+    background-color: #27384c;
+    width:  30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.mail{
+    display: flex;
+    gap: 15px;
+    padding-left: 75px;
+    padding-top: 13px;
+    align-items: center;
+}
+
+.mail-id{
+    color: #27384c;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif ;
+}
+.img-mail svg{
+    height: 18px;
+    width: 18px;
+   padding: 6px;
+}
+
+
+
+.img-home{
+    background-color: #27384c;
+    width:  30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.home{
+    display: flex;
+    gap: 15px;
+    padding-left: 75px;
+    padding-top: 13px;
+    align-items: center;
+}
+
+.home-id{
+    color: #27384c;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif ;
+}
+.img-home svg{
+    height: 21px;
+    width: 21px;
+   padding: 5px;
+}
+
+.first{
+    width: 265px;
+    height: 32px;
+    background-color: #27384c;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif ;
+    text-align: center;
+    margin-top:  24px;
+    margin-left: 54px;
+    
+}
+
+.skill-set{
+    color: #27384c;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif ;
+    margin-top: 18px;
+    margin-left: 80px;
+
+}
+
+li::marker{
+    color: #27384c;
+}
+
+.skill-set ul li {
+    padding: 5px;
+}
+
+.second{
+    width: 265px;
+    height: 32px;
+    background-color: #27384c;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif ;
+    text-align: center;
+    margin-top:  24px;
+    margin-left: 54px;
+}
+
+.language-set{
+    color: #27384c;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif ;
+    margin-top: 18px;
+    margin-left: 80px;
+}
+
+.language-set ul li{
+    padding: 5px;
+}
+
+.third{
+    width: 348px;
+    height: 32px;
+    background-color: #27384c;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif ;
+    text-align: center;
+    margin-top:  20px;
+    margin-left: 78px;
+}
+
+.body{
+    display: flex;
+
+}
+
+.cont{
+    font-family: "Poppins", sans-serif ;
+    color: #27384c;
+    margin-top: 7px;
+    margin-left: 78px;
+    margin-right: 60px;
+    
+   
+   
+}
+.forth{
+    margin-top: 10px;
+}
+
+.line{
+    font-size: 14px;
+}
+
+.bold{
+    font-weight: 600;
+}
+.experience{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
+}
+
+.education{
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.last{
+    margin-top: 15px;
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT-US</title>
+
+   <style>
+    .form-control{
+        border: 3px solid black;
+    }
+   </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+      console.log('hello');
+     
+      function doBindings(){
+          $("#submitBtn").on("click", handleFormSubmission);
+      }
+     
+      $(doBindings);
+  
+      function handleFormSubmission(event){
+          console.log("inside handleFormSubmission");
+          let fields = ["name", "email", "phone","comment"]; 
+          let isValid = true;
+  
+          fields.forEach(function(fieldId) {
+              let fieldValue = $("#" + fieldId).val();
+              if (!fieldValue) {
+                  console.log(fieldId + " is not valid");
+                  $("#" + fieldId).addClass("error");
+                  isValid = false;
+              }
+          });
+  
+          if (!isValid) {
+              console.log("Form is not valid");
+              event.preventDefault();
+          } else {
+              console.log("Form is valid");
+          }
+      }
+  </script>
+  
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg  shadow-sm main ">
+    <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+      <a class="navbar-brand " id="logo" href="#"><img  src="Images/Logo.avif" alt="" width="160" height="50" ></a>
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+     
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center ms-5 ">
+            <li class="nav-item">
+              <a class="nav-link  mx-lg-1 fon"  href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-1 fon" href="#">FACE MAKEUP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-lg-1 fon" href="#">EYE MAKEUP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-1 fon" href="#">LIP MAKEUP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-1 fon" href="#">ACCESSORIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active  mx-lg-1 fon" aria-current="page" href="ContactUs.html">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-1 fon" href="#">FAQs</a>
+              </li>
+          </ul>
+             
+           
+          
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center gap-1 fs-5 " id="icons">
+
+       
+        <button class="btn"><i class="fa-solid fa-user"></i></button>
+        <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+
+    </div>
+    </div>
+  </nav>
+
+
+
+    
+        <h1 class="display-3 contact justify-content-md-center ">CONTACT US</h1>
+
+  
+ 
+  <div class="d-flex  container justify-content-center ">
+    <form id="contactForm" action="" method="post">
+        <div class="flex d-flex gap-2  ">
+      <div class="length mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="forme" id="name" name="name" required>
+      </div>
+      <div class="length mb-3">
+        <label for="email" class="form-label">Email *</label>
+        <input type="email" class="forme" id="email" name="email" required>
+      </div>
+    </div>
+      <div class="length2 mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="forme" id="phone" name="phone">
+      </div>
+      <div class="length2 mb-3">
+        <label for="comment" class="form-label">Comment</label>
+        <textarea id="comment" name="comment" rows="4" class="forme"></textarea>
+      </div>
+      <div>
+        <button id="submitBtn" class="send">Send</button>
+      </div>
+      
+    </form>
+  </div>
+   
+  
+
+  <footer>
+    <div class="foot d-flex justify-content-center align-item-center ">
+      <p>&copy;2024 Miss Rose-Official Store.com</p>
+    </div>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
