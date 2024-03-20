@@ -11,12 +11,12 @@ function displayStories() {
   
         $.each(data, function (index, story) {
           storiesList.append(
-            `<div class="mb-3">
+            `<div class="m-5">
                   <h3>${story.title}</h3>
-                  <div>${story.content}</div>
+                  <div class="mt-4">${story.content}</div>
                   <div>
-                      <button class="btn btn-info btn-sm mr-2 btn-edit mt-3 " data-id="${story.id}">Edit</button>
-                      <button class="btn btn-danger btn-sm mr-2 btn-del mt-3 " data-id="${story.id}">Delete</button>
+                      <button class=" botn btn-edit mt-5 " data-id="${story.id}">Edit</button>
+                      <button class=" botn btn-del mt-5 " data-id="${story.id}">Delete</button>
                   </div>
               </div>
               <hr />
