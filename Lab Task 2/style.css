@@ -64,11 +64,11 @@ ul  li a {
 }
 
 .length2{
-    width: 51vw;
+    width: 50.75vw;
 }
 
 .length3{
-    width: 42vw;
+    width: 50vw;
 }
 
 .flex{
@@ -293,6 +293,30 @@ div input{
 
   
     
+    
+
+} 
+
+@media (max-width: 770px) {
+    
+  
+    .card{
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+} 
+
+@media (max-width: 445px) {
+    
+  
+    .card{
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
 
 } 
