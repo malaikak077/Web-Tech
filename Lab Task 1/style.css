@@ -30,7 +30,9 @@ ul  li a {
 
 }
 
-
+.form-control{
+    width:50vw !important;
+}
 
 
 
@@ -43,6 +45,18 @@ ul  li a {
     padding-right: 25px ;
     border: none;
 }
+.botn{
+    background-color: #121212;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+    padding-right: 18px ;
+    border-radius: 10px;
+}
+
+
+
 
 .length{
    
@@ -50,7 +64,11 @@ ul  li a {
 }
 
 .length2{
-    width: 51vw;
+    width: 50.75vw;
+}
+
+.length3{
+    width: 50vw;
 }
 
 .flex{
@@ -275,6 +293,30 @@ div input{
 
   
     
+    
+
+} 
+
+@media (max-width: 770px) {
+    
+  
+    .card{
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+} 
+
+@media (max-width: 445px) {
+    
+  
+    .card{
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
 
 } 
