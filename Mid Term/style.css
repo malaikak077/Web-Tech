@@ -111,3 +111,7 @@ a:hover{
     height: 200px;
     width: 300px;
 }
+
+img{
+    cursor: pointer;
+}
