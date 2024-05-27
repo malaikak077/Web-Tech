@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+
+ul  li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px !important;
+}
+.family{
+    font-family: "Assistant", sans-serif;
+}
+#icons{
+    margin-right: 6rem;
+}
+ #logo{
+    margin-left: 10rem;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: none;
+    z-index: 1;
+}
+
+.cart {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: -450px; /* Initially hidden off-screen */
+    width: 450px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+}
+
+.badge {
+    font-size: 0.75rem;
+    /* padding: 0.5em; */
+}
+
+.cart-content {
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+.background img{
+    width: 100%;
+    height: 85vh;
+
+}
+
+.form-control{
+    width:50vw !important;
+}
+  /* Define transition properties for the card */
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Define hover effect */
+  .card:hover {
+    transform: scale(1.05); /* Scale the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow on hover */
+  }
+
+
+.boton{
+    background-color: #121212;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px ;
+    border: none;
+}
+.botn{
+    background-color: #121212;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+    padding-right: 18px ;
+    border-radius: 10px;
+}
+.field{
+    width: 15vw;
+}
+.field2{
+    width: 30.5vw;
+}
+
+
+.length{
+   
+    width: 25vw;
+}
+
+.length2{
+    width: 50.75vw;
+}
+
+.length3{
+    width: 50vw;
+}
+
+.flex{
+    margin-top: 55px;
+}
+
+.contact{
+  font-family: "Assistant", sans-serif ;
+  font-weight:bolder;
+  font-size: 30px;
+  color: #121212;
+  margin-top: 4.2rem;
+  /* margin-left: 23.2rem !important; */
+  text-align: center;
+  
+}
+
+
+.send{
+    background-color: #121212;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px ;
+    border: none;
+    font-size: 18;
+    margin-top: 20px;
+}
+
+div input{
+    height: 45px;
+    border: 3px solid black;
+}
+
+
+.foot{
+    background-color: black;
+    color: white;
+    width: auto;
+    height: 8vh;
+    margin-top: 200px;
+    padding-top: 15px;
+}
+
+
+.forme{
+    
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: black;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: white;
+        background-clip: padding-box;
+        border: 1px solid black;
+        border-radius: 3px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    
+}
+
+.error{
+    border: 2px solid red;
+
+   
+}
+.border-sec{
+    border: 1px solid rgb(227, 208, 208);
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-nav .active {
+    font-weight:600;
+
+}
+.cart-height{
+    height: 450px;
+}
+.cart-h{
+    height: 300px;
+}
+.mag{
+   margin-top: 0;
+}
+.missrose{
+    font-size: 13px;
+    color: #121212BF;
+    word-spacing: 2px;
+}
+.quantity{
+    margin-top: 10px;
+    width: 160px;
+    height: 50px;
+}
+
+.cart-button{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 270px;
+}
+.buy-button{
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 270px;
+}
+
+
+.outbtn{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.width{
+    width: 200px;
+}
+
+/* Responsiveness */
+
+
+
+ @media (max-width: 1400px) {
+    #icons{
+       
+        margin-right: 7rem;
+       
+    }
+
+    #logo{
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 1370px) {
+    #icons{
+        margin-right: 6rem;
+       
+    }
+
+    #logo{
+        margin-left: 4rem;
+    }
+}
+
+
+@media (max-width: 1340px) {
+    #icons{
+        margin-right: 5rem;
+    }
+
+    #logo{
+        margin-left: 3rem;
+    }
+   
+}
+
+@media (max-width: 1320px) {
+    #icons{
+        margin-right: 4rem;
+    }
+
+    #logo{
+        margin-left: 2.5rem;
+    }
+    ul li a{
+        font-size: 15px !important;
+    }
+   
+}
+@media (max-width: 1250px) {
+    #icons{
+        margin-right: 3rem;
+    }
+
+    #logo{
+        margin-left: 2rem;
+    }
+    
+   
+   
+}
+@media (max-width: 1220px) {
+    #icons{
+        margin-right: 3.5rem;
+    }
+
+    #logo{
+        margin-left: 3.5rem;
+    }
+   
+}
+
+@media (max-width: 1190px) {
+    #icons{
+        margin-right: 2.5rem;
+    }
+
+    #logo{
+        margin-left: 2.5rem;
+    }
+    ul li a{
+        font-size: 14px !important;
+    }
+
+}
+
+
+@media (max-width: 1175px) {
+    #icons{
+        margin-right: 2rem;
+    }
+
+    #logo{
+        margin-left: 2rem;
+    }
+    
+
+}
+
+@media (max-width: 1100px) {
+    #icons{
+        margin-right: 1.5rem;
+    }
+
+    #logo{
+        margin-left: 1.5rem;
+    }
+
+    ul li a{
+        font-size: 13px !important;
+    }
+    
+
+}
+
+@media (max-width: 1050px) {
+    #icons{
+        margin-right: 1rem;
+        margin-left: 0;
+    }
+
+    #logo{
+        margin-left: 1rem;
+    }
+    ul li a{
+        font-size: 12px !important;
+    }
+  
+
+}
+
+@media (max-width: 1000px) {
+    #icons{
+        margin-right: 0.5rem;
+    }
+
+    #logo{
+        margin-left: 0.5rem;
+    }
+
+  
+    
+    
+
+} 
+
+@media (max-width: 770px) {
+    
+  
+    .card{
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+} 
+
+@media (max-width: 445px) {
+    
+  
+    .card{
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+} 
+

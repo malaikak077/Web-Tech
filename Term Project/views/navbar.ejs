@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg  shadow-sm main ">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand " id="logo" href="#"><img src="/Images/Logo.avif" alt="" width="160" height="50"></a>
+            <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center ms-5 ">
+                        <li class="nav-item">
+                            <a class="nav-link   mx-lg-1 fon" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  mx-lg-1 fon" href="../FaceMakeup">FACE MAKEUP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-1 fon" href="../EyeMakeup">EYE MAKEUP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-1 fon" href="../LipMakeup.html">LIP MAKEUP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-1 fon" href="../Accesories.html">ACCESSORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-1 fon" href="../ContactUs.html">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-1 fon" href="../FAQs.html">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center gap-1 fs-5 " id="icons">
+                <% if (!user) { %>
+                    <a class="link-dark " href="/login">
+                        <button class="btn"><i class="fa-solid fa-user"></i></button>
+                     </a>
+            
+                <% } else { %>
+                    <a class="link-dark " href="/logout">
+                        <button class="btn"><i class="fa-solid fa-sign-out-alt"></i></button>
+                    </a>
+                    <!-- <li>Welcome <%= user.name %>!</li> -->
+                <% } %>
+
+
+
+
+
+                
+               
+                <button id="cartButton" class="btn"><i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartBadge" class="position-absloute top-0  translate-middle badge rounded-pill bg-danger">0</span>
+                </button>
+                <div id="overlay" class="overlay"></div>
+
+                <div id="cart" class="cart">
+                    
+                        <span class="close"><img src="/Images/close.svg" alt=""></span>
+                        <div class="mt-5 fs-2 fw-medium  text-center" >CART</div>
+                        <div class="mt-2 cart-height cart-content  overflow-auto">
+                           
+                          
+                        </div>
+
+                       <div class="d-flex justify-content-center "> <div id="total" class="mt-4 fs-3  ">SubTotal:  <span class="ps-5 " id="subtotal">$0</span> </div></div>
+                         <div class="d-flex justify-content-center ">
+                            <a class="text-decoration-none text-white " href="/Check/Cart"> 
+                            <button id="CheckOut" class="btn-dark outbtn  pt-1 pb-1 ps-2 pe-2  m-3" disabled >Check Out</button>
+                             </a>
+                         </div>
+                       
+                       
+                      
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <% if (flash) { %>
+        <div class="alert alert-<%-flash.type%>">
+           <%= flash.message %>
+       </div>
+       <% } %>
+       
+    
+    <script src="/JS/navbar.js"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+
+</html>

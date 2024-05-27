@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MissRose-<%= prod.title %></title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <%- include("navbar") %>
+ 
+    <div class="d-flex  justify-content-evenly  p-5 ">
+      <div  class="border-sec"><img id="sourceImg" width="500" height="550" src="<%= prod.imageUrl %>" alt="..."></div>
+      <div>
+        <div class="p-5  family d-flex flex-column  ">
+          <div class="missrose"></p>MISSROSE PAKISTAN OFFICIAL</div>
+         <div id="title" class=" fs-1 mag"><%= prod.title %></div> 
+          <div id="price" class="fs-3 mt-3">$<%= prod.price %></div>
+          <div class="mt-3 fw-bold  ">Quantity</div>
+          <div class="mt-3 border border-black d-flex  align-items-center quantity">
+            <button id="sub" class="btn ms-2 me-1 "><i class="fa fa-subtract"></i></button>
+            <div id="quantity" class=" fs-4 ms-4 me-3">1</div>
+            <button id="add" class="btn ms-2 me-1 "><i class="fa fa-add"></i></button>
+          </div>
+          <button id="AddCart" class=" cart-button mt-4 border border-black ">
+            Add to cart
+          </button>  
+          <a class="text-decoration-none text-white " href="/CheckOut/<%= prod.id %>"> 
+            <button id="BuyNow" class=" buy-button mt-2 border border-black ">
+              Buy it now
+            </button>
+           
+          </a>  
+
+        </div>
+      </div>
+
+    </div>
+     
+
+    <div class="display-5 pt-5 contact">Related Products</div>
+
+    <div class="p-5  container">
+      <div class="row">
+        
+        <% products.forEach(product=> { %>
+        
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <a class="text-decoration-none " href="/Eye/<%= product.id %>">
+            <div class="card ">
+              <img src="<%= product.imageUrl %>" class="card-img-top" alt="<%= product.title %>">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= product.title %>
+                </h5>
+                <p class="card-text fs-3">$<%= product.price %>
+                </p>
+              </div>
+            </div>
+            </a>
+          </div>
+      
+          <% }); %>
+      </div>
+    </div> 
+    <footer>
+      <div class="foot d-flex justify-content-center align-item-center ">
+        <p>&copy;2024 Miss Rose-Official Store.com</p>
+      </div>
+    </footer>
+    
+    
+   
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+
+</html>
